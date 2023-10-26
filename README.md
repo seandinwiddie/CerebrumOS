@@ -281,3 +281,21 @@ You can now run your Cerebrum.jar:
 ```sh
 java -jar Cerebrum.jar
 ```
+
+**Backup Your System**:
+   Before making any changes, it's essential to create a backup of the existing system. This ensures that you can revert to the original state if something goes wrong during the porting process.
+
+**Move and Reorganize Files**:
+   Begin moving files and directories from the original Linux distribution to the new structure. This is a time-consuming process, and you should be cautious.
+
+**Update Configuration Files**:
+   Reconfigure the system to reflect the new directory structure. Update configuration files, scripts, and symbolic links to point to the correct locations. Be sure to edit configuration files for services and utilities that rely on specific paths.
+
+**Update System Services**:
+   You'll likely need to update and reconfigure system services to use the new directory structure. This can involve modifying systemd service units, init scripts, and system configuration files.
+
+**Create an Image or Backup**:
+   Once you're satisfied with the ported system and it operates as expected, create a backup or an image of the new directory structure. This will be the basis for your CerebrumOS.
+
+**Iterate and Optimize**:
+    Expect to iterate and optimize your custom structure, configuration, and services.
