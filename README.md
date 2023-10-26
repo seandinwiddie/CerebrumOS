@@ -247,3 +247,37 @@ Implementing language processing and memory management using Redux.java and chat
 **API Integration Modules**: Plan for robust API integration modules to handle requests, responses, and potential errors gracefully.
 
 **Functional Programming**: Follow functional programming paradigms as closely as possible.
+
+**Compiling the Code**
+
+Compile these Java files. You can use the `javac` command for this purpose:
+
+```sh
+javac /cerebrum/frontal_lobe/thoughts/HelloWorldThoughts.java
+javac /cerebrum/frontal_lobe/decision_making/HelloWorldDecisionMaking.java
+# ... (Repeat for other components)
+```
+
+**Creating the JAR File**
+
+Now, create a JAR file by specifying a manifest file that includes the main class:
+
+Create a file named `manifest.txt` with the following content:
+
+```
+Main-Class: cerebrum.Main
+```
+
+Run the `jar` command to package everything into a JAR file:
+
+```sh
+jar cvmf manifest.txt Cerebrum.jar cerebrum
+```
+
+**Running the Cerebrum.jar**
+
+You can now run your Cerebrum.jar:
+
+```sh
+java -jar Cerebrum.jar
+```
